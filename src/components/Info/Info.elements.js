@@ -4,6 +4,10 @@ export const InfoContainer = styled.div`
   color: #fff;
   padding: ${({ header }) => (header ? "18rem" : "15rem")} 0;
   background: ${({ lightBg }) => (lightBg ? "#eeeeee" : "#ff5722")};
+
+  @media screen and (max-width: 768px) {
+    padding: 10rem 0;
+  }
 `;
 
 export const InfoRow = styled.div`
@@ -21,12 +25,23 @@ export const InfoColumn = styled.div`
   flex: 1;
   max-width: 50%;
   flex-basis: 50%;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    max-width: 100%;
+    flex-basis: 100%;
+    justify-content: center;
+  }
 `;
 
 export const TextWrapper = styled.div`
   max-width: 54rem;
   padding-top: 0;
   padding-bottom: 6rem;
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 65px;
+  }
 `;
 
 export const TopLine = styled.div`

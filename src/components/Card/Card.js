@@ -1,5 +1,5 @@
-import React from 'react';
-import { Container } from '../../globalStyles';
+import React from "react";
+import { Container } from "../../globalStyles";
 import {
   CardContainer,
   TextWrapper,
@@ -11,7 +11,7 @@ import {
   ColumnFeatures,
   ColumnCheck,
   ColumnDesc,
-} from './Card.elements';
+} from "./Card.elements";
 
 const Card = () => {
   return (
@@ -53,7 +53,7 @@ const Card = () => {
                 <ColumnCheck /> PHP 100,000 Wallet Size
               </ColumnDesc>
               <ColumnDesc>
-                <ColumnCheck /> PHP 100,000 Monthyl Limit
+                <ColumnCheck /> PHP 100,000 Monthly Limit
               </ColumnDesc>
               <ColumnDesc>
                 <ColumnCheck /> PHP 100,000 Daily Outgoing Limit

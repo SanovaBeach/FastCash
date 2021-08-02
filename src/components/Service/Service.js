@@ -1,15 +1,10 @@
-import React from 'react';
-import { Container } from '../../globalStyles';
-import {
-  CardContainer,
-  
-} from '../Card/Card.elements';
+import React from "react";
+import { Container } from "../../globalStyles";
+import { CardContainer } from "../Card/Card.elements";
 
-import { CardColumn, ShortCard, Img, Headline, Desc } from './Service.elements';
+import { CardColumn, ShortCard, Img, Headline, Desc } from "./Service.elements";
 
 const Service = ({ LsService }) => {
-  console.log(LsService);
-
   return (
     <React.Fragment>
       <CardContainer>
