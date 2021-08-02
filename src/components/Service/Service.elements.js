@@ -14,14 +14,14 @@ export const ShortCard = styled.div`
   margin: 2rem 0;
   max-height: 50rem;
   height: 100%;
-  max-width: 38rem;
+  max-width: 40rem;
   background: #eeeeee;
   border-radius: 1rem;
   padding-bottom: 8rem;
   text-align: center;
 
   @media screen and (max-width: 480px) {
-    padding: 2rem 1rem;
+    padding: 2rem 0.5rem;
   }
 `;
 

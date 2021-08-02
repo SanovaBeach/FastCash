@@ -6,6 +6,10 @@ export const CardContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 480px) {
+    padding: 4rem 0;
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -20,6 +24,10 @@ export const Heading = styled.h1`
   text-align: center;
   margin-bottom: 1.2rem;
   color: #ff5722;
+
+  @media screen and (max-width: 480px) {
+    font-size: 3.5rem;
+  }
 `;
 
 export const Desc = styled.p`
@@ -34,6 +42,10 @@ export const CardColumn = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media screen and (max-width: 760px) {
+    flex-direction: column;
+  }
 `;
 
 export const ColumnInfo = styled.div`
@@ -44,6 +56,11 @@ export const ColumnInfo = styled.div`
   height: 42rem;
   border-radius: 1rem;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+
+  @media screen and (max-width: 760px) {
+    width: 100%;
+    margin: 2rem 0;
+  }
 `;
 
 export const ColumnTitle = styled.h1`
@@ -71,4 +88,9 @@ export const ColumnDesc = styled.p`
   display: flex;
   padding: 0 1rem;
   text-align: start;
+
+  @media screen and (max-width: 760px) {
+    justify-content: flex-start;
+    align-items: center;
+  }
 `;

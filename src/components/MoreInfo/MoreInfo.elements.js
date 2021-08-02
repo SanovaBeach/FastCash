@@ -40,6 +40,10 @@ export const Headline = styled.h1`
   font-size: 4.8rem;
   line-height: 1.1;
   color: ${({ lightText }) => (lightText ? "#a9b3c1" : "#212121")};
+
+  @media screen and (max-width: 480px) {
+    font-size: 4rem;
+  }
 `;
 export const SecondHead = styled.h2`
   margin-bottom: 2.4rem;

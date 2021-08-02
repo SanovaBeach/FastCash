@@ -13,6 +13,10 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 100;
+
+  @media screen and (max-width: 480px) {
+    height: 6rem;
+  }
 `;
 
 export const NavContainer = styled(Container)`
@@ -33,6 +37,9 @@ export const MobileIcon = styled.div`
     font-size: 3rem;
     cursor: pointer;
   }
+  @media screen and (max-width: 480px) {
+    font-size: 2rem;
+  }
 `;
 export const NavIcon = styled(FaDollarSign)`
   margin-right: 0;
@@ -47,6 +54,10 @@ export const NavLogo = styled(Link)`
   display: flex;
   align-items: center;
   font-weight: 900;
+
+  @media screen and (max-width: 480px) {
+    font-size: 2.5rem;
+  }
 `;
 
 export const NavMenu = styled.ul`
@@ -61,11 +72,15 @@ export const NavMenu = styled.ul`
     width: 100%;
     height: 90vh;
     position: absolute;
-    top: 80px;
+    top: 8rem;
     left: ${({ click }) => (click ? 0 : "-100%")};
     opacity: 1;
     transition: all 0.5s ease;
     background: #101522;
+  }
+
+  @media screen and (max-width: 480px) {
+    top: 6rem;
   }
 `;
 

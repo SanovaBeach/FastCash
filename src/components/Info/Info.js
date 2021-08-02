@@ -1,6 +1,6 @@
-import React from 'react';
-import { Container, Button } from '../../globalStyles';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Container, Button } from "../../globalStyles";
+import { Link } from "react-router-dom";
 import {
   InfoContainer,
   InfoRow,
@@ -11,8 +11,7 @@ import {
   Subtitle,
   ImgWrapper,
   Img,
-} from './Info.elements';
-
+} from "./Info.elements";
 
 const Info = ({
   header,

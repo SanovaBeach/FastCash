@@ -8,6 +8,10 @@ export const InfoContainer = styled.div`
   @media screen and (max-width: 768px) {
     padding: 10rem 0;
   }
+
+  @media screen and (max-width: 480px) {
+    padding: 5rem 0;
+  }
 `;
 
 export const InfoRow = styled.div`
@@ -57,6 +61,10 @@ export const Heading = styled.h1`
   font-size: 4.8rem;
   line-height: 1.1;
   color: ${({ lightText }) => (lightText ? "#a9b3c1" : "#212121")};
+
+  @media screen and (max-width: 480px) {
+    font-size: 3.5rem;
+  }
 `;
 export const Subtitle = styled.p`
   max-width: 44rem;

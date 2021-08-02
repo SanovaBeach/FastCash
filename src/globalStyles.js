@@ -27,6 +27,9 @@ export const Container = styled.div`
   @media screen and (max-width: 960px) {
     padding: 0 3rem;
   }
+  @media screen and (max-width: 480px) {
+    padding: 0 3rem;
+  }
 `;
 
 export const Button = styled.button`
