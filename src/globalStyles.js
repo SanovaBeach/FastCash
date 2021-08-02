@@ -1,4 +1,4 @@
-import styled, {createGlobalStyle} from 'styled-components'
+import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   *,
@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     font-size: 62.5%;
   }
-`
+`;
 
 export const Container = styled.div`
   z-index: 1;
@@ -23,15 +23,19 @@ export const Container = styled.div`
   margin-left: auto;
   padding-left: 5rem;
   padding-right: 5rem;
-`
+
+  @media screen and (max-width: 960px) {
+    padding: 0 3rem;
+  }
+`;
 
 export const Button = styled.button`
   border-radius: 4px;
-  background: ${({primary}) => (primary ? '#BDBDBD' : '#757575')};
+  background: ${({ primary }) => (primary ? "#BDBDBD" : "#757575")};
   white-space: nowrap;
-  padding: ${({big}) => (big ? '12px 64px' : '10px 20px')};
+  padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
   color: #fff;
-  font-size: ${({fontBig}) => (fontBig ? '2rem' : '1.6rem')};
+  font-size: ${({ fontBig }) => (fontBig ? "2rem" : "1.6rem")};
   outline: none;
   border: none;
   cursor: pointer;
@@ -39,9 +43,8 @@ export const Button = styled.button`
   &:hover {
     transition: all 0.3s ease-out;
     background: #fff;
-    background: ${({primary}) => (primary ? '#757575' : '#BDBDBD')};
+    background: ${({ primary }) => (primary ? "#757575" : "#BDBDBD")};
   }
-  
-`
+`;
 
-export default  GlobalStyle
+export default GlobalStyle;

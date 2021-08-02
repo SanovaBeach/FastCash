@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import {Container} from '../../globalStyles'
-import {FaDollarSign} from 'react-icons/fa'
-import {Link} from 'react-router-dom'
+import styled from "styled-components";
+import { Container } from "../../globalStyles";
+import { FaDollarSign } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const Nav = styled.nav`
   background: #ff5722;
@@ -12,19 +12,31 @@ export const Nav = styled.nav`
   font-size: 1.6rem;
   position: sticky;
   top: 0;
-  z-index: 999;
-`
+  z-index: 100;
+`;
 
 export const NavContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   height: 8rem;
   ${Container}
-`
+`;
+export const MobileIcon = styled.div`
+  display: none;
 
+  @media screen and (max-width: 960px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 3rem;
+    cursor: pointer;
+  }
+`;
 export const NavIcon = styled(FaDollarSign)`
   margin-right: 0;
-`
+`;
 
 export const NavLogo = styled(Link)`
   color: #fff;
@@ -35,15 +47,27 @@ export const NavLogo = styled(Link)`
   display: flex;
   align-items: center;
   font-weight: 900;
-`
+`;
 
 export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
   list-style: none;
-  text-align:  center;
+  text-align: center;
 
-`
+  @media screen and (max-width: 960px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: ${({ click }) => (click ? 0 : "-100%")};
+    opacity: 1;
+    transition: all 0.5s ease;
+    background: #101522;
+  }
+`;
 
 export const NavLinks = styled(Link)`
   font-size: 1.6rem;
@@ -52,8 +76,20 @@ export const NavLinks = styled(Link)`
   align-items: center;
   text-decoration: none;
   height: 100%;
-  padding: .5rem 1rem;
-`
+  padding: 0.5rem 1rem;
+
+  @media screen and (max-width: 960px) {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+
+    &:hover {
+      color: #4b59f7;
+      transition: all 0.3s ease;
+    }
+  }
+`;
 
 export const NavItem = styled.li`
   height: 8rem;
@@ -62,7 +98,7 @@ export const NavItem = styled.li`
   &:hover {
     border-bottom: 2px solid #00adb5;
   }
-`
+`;
 
 export const NavItemBtn = styled.li`
   @media screen and (max-width: 960px) {
@@ -72,7 +108,7 @@ export const NavItemBtn = styled.li`
     width: 100%;
     height: 12rem;
   }
-`
+`;
 
 export const NavBtnLink = styled(Link)`
   display: flex;
@@ -84,4 +120,4 @@ export const NavBtnLink = styled(Link)`
   width: 100%;
   border: none;
   outline: none;
-`
+`;
