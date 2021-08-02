@@ -20,7 +20,7 @@ export const LifeStyleService = [
     id: 1,
     icon: require("../../images/lifestyle/money-turnover.svg").default,
     headline: "Send Money",
-    desc: "Transfer money securely to GCash users for free.",
+    desc: "Transfer money securely to FastCash users for free.",
   },
   {
     id: 2,
@@ -56,7 +56,7 @@ export const LifeStyleService = [
     id: 7,
     icon: require("../../images/lifestyle/video-game-gamepad.svg").default,
     headline: "Game Credits",
-    desc: "Whether it's for powering up or getting an extra life. Purchase Game Credits on GCash with NO EXTRA CHARGES!",
+    desc: "Whether it's for powering up or getting an extra life. Purchase Game Credits on FastCash with NO EXTRA CHARGES!",
   },
 ];
 
@@ -77,7 +77,7 @@ export const FinancialService = [
     id: 3,
     icon: require("../../images/financial/user-privacy-security.svg").default,
     headline: "FastInsure",
-    desc: "Be ready for anything that life throws at you! Stay protected and be financially covered with GInsure. Get affordable insurance in a few taps inside the GCash App.",
+    desc: "Be ready for anything that life throws at you! Stay protected and be financially covered with GInsure. Get affordable insurance in a few taps inside the FastCash App.",
   },
   {
     id: 4,
@@ -89,6 +89,6 @@ export const FinancialService = [
     id: 5,
     icon: require("../../images/financial/piggy-saving.svg").default,
     headline: "Save Money",
-    desc: "Save for your future wisely! Make your #IponGoals possible with GSave conveniently in your mobile phone. Open your account, deposit and withdraw all inside the GCash App.",
+    desc: "Save for your future wisely! Make your #IponGoals possible with GSave conveniently in your mobile phone. Open your account, deposit and withdraw all inside the FastCash App.",
   },
 ];
